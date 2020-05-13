@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00838F"
+    android:orientation="vertical"
+    android:id="@+id/list_monan_ngon"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Link Ảnh"
+            android:textColor="#F8F9FF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:textColor="#fff"
+            android:id="@+id/editTextAnh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tên Đồ Uống"
+            android:textColor="#F8F9FF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:textColor="#fff"
+            android:id="@+id/editTextMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Giá"
+            android:textColor="#F8F9FF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:textColor="#fff"
+            android:id="@+id/editTextGia"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="text|numberDecimal"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="VND"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="140dp">
+
+        <Button
+            android:id="@+id/buttonThem"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Thêm Món"
+            android:textSize="20sp" />
+    </LinearLayout>
+</FrameLayout>

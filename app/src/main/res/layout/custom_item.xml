@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardviewitem"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="6dp"
+    app:cardPreventCornerOverlap="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/img_thumbnail"
+            android:src="@drawable/side_nav_bar"
+           />
+
+        <!--Style Tên Món-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelname"
+            android:text="Tên Đồ Uống:"
+            android:textColor="#0E54A5"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/img_thumbnail"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTenMon"
+            android:text="title"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="21sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/labelname"/>
+
+        <!--Style Giá-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelgia"
+            android:text="Giá:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#0E54A5"
+            android:layout_toRightOf="@id/img_thumbnail"
+            android:layout_below="@id/tvTenMon"/>
+
+        <TextView
+            android:id="@+id/tvGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTenMon"
+            android:layout_marginStart="53dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/labelgia"
+            android:text="100000"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="22sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ttt"
+            android:text="VND"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tvGia"
+            android:layout_below="@id/tvTenMon"/>
+
+        <!-- Style Nút Xóa Sửa-->
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
